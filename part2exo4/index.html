@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" value="Doe" id="lastname" />
+    <label for="firstname">Votre prenom  : </label><input type="text" name="firstname" value="John" id="firstname" />
+    <label for="city">Votre ville  : </label><input type="text" name="city" value="New York" id="city" />
+    <button type="button" name="button">RAZ</button>
+
+    <script>
+
+        let btns = document.querySelector("button");
+        let inputs = document.querySelectorAll("input");
+        
+        btns.addEventListener("click", () => {
+            inputs.forEach(input => input.value = ""); 
+        });
+
+
+     
+
+        
+
+    </script>
+</body>
+</html>
